@@ -1,0 +1,48 @@
+## Auth0?
+   1. Khái niệm
+   Auth0 về cơ bản là một nền tảng xác thực và ủy quyền cho ứng dụng của bạn. Nó cung cấp tất cả các công cụ cần thiết để xây dựng và chạy cơ sở hạ tầng danh tính an toàn bao gồm xác thực, bảo vệ dữ liệu và quản lý mật khẩu.
+   Auth0 có thể được sử dụng để triển khai đăng nhập một lần (SSO), không cần mật khẩu, xác thực đa yếu tố, v.v. Nó cung cấp API để các nhà phát triển có thể sử dụng Auth0 trong ứng dụng của riêng họ để cung cấp xác thực cho người dùng của họ. Có nhiều lý do để chọn Auth0 làm nền tảng xác thực như
+       - Xác thực dựa trên mã thông báo
+            - Xác thực mạng xã hội
+                 - Xác thực đa yếu tố
+                       - Tích hợp luồng thay đổi mật khẩu và quên mật khẩu.
+   2. Tính năng
+   Auth0 có thể hỗ trợ chuẩn bị ứng dụng được bảo mật tốt nhất. Nó có nhiều tính năng khiến nó trở thành lựa chọn tuyệt vời cho các nhà phát triển sử dụng. Một số tính năng là:
+     - Đăng nhập chung
+         - Đăng nhập một lần
+             - Xác thực đa yếu tố
+                 - Không có mật khẩu
+   a) Đăng nhập chung
+   Auth0 cung cấp hoạt động đăng nhập truyền thống giúp tăng cường trải nghiệm của người dùng. Nó cho phép người dùng có xác thực nhất quán và cảnh báo về nỗ lực lừa đảo. Thiết kế đăng nhập chung khiến người dùng chỉ có một biểu mẫu cho thông tin xác thực. Nếu có bất kỳ điều gì đáng ngờ, thông tin đó sẽ bị từ chối.
+   b) Đăng nhập một lần
+   Đăng nhập một lần cho phép người dùng có quyền truy cập vào tất cả các ứng dụng họ có thông qua thông tin đăng nhập duy nhất. Ví dụ: bạn có thể sử dụng tài khoản Google của mình để đăng nhập vào ứng dụng dịch vụ. Tuy nhiên, việc xây dựng đăng nhập một lần có thể tốn thời gian và chi phí.
+   c) Xác thực đa yếu tố
+    Xác thực đa yếu tố là một loại xác minh yêu cầu nhiều hơn một loại thông tin nhận dạng. Điều này làm tăng tính bảo mật của ứng dụng, giảm nguy cơ truy cập trái phép. Loại thông tin bao gồm;
+          - Kiến thức: thứ mà người dùng biết (mật khẩu)
+          - Quyền sở hữu: thứ mà người dùng đã có (thiết bị di động)
+          - Di truyền: thứ gì đó phân biệt người dùng (dấu vân tay hoặc quét                 võng mạc).
+   Auth0 cho phép bạn tùy chỉnh trải nghiệm xác thực đa yếu tố của mình.
+   d) Không có mật khẩu
+   Mọi người dùng đều hoài nghi về tính bảo mật thông tin của họ. Hệ thống không cần mật khẩu này cho phép người dùng thực hiện quy trình xác thực mà không cần nhập mật khẩu. Người dùng được phép đăng nhập bằng cách nhập địa chỉ email hoặc số điện thoại. Người dùng có thể nhận được một lá thư có liên kết hoặc mã một lần để đăng nhập.
+   3. Lợi ích
+   a) Bảo vệ
+   Bảo mật trong Auth0 được cung cấp bởi giao thức xác thực OAuth 2.0. Giao thức này xác định ứng dụng cấp quyền truy cập vào tài nguyên trên dịch vụ khác. Thông qua giao thức, bạn có thể kiểm soát quyền truy cập theo ý muốn. Giao thức này thông báo cho người dùng nếu mật khẩu được sử dụng trên bất kỳ trang web nào khác mà chưa được truy cập trong khoảng thời gian trước đó.
+   b) Nhiều tùy chọn giao diện người dùng
+   Một trong những lợi ích của Auth0 là bạn có thể xây dựng hoặc tùy chỉnh bất kỳ UI nào. Trong khi phát triển ứng dụng, bạn có thể quyết định giữa luồng đăng nhập gốc hoặc dựa trên trình duyệt. UI dựa trên trình duyệt chuyển hướng người dùng đến trang đăng nhập của Auth0. Trong khi ở UI gốc, người dùng có thể thực hiện xác thực trong chính ứng dụng. Do đó, Auth0 cung cấp tính linh hoạt trong dịch vụ của mình.
+   c) Phân tích
+   Ngoài các tính năng hấp dẫn, Auth0 còn cung cấp các công cụ giúp bạn theo dõi hành động của người dùng. Nó chứa các số liệu như;
+     - Số lượng người dùng hiện tại và mới trên ứng dụng
+        - Số lượng người dùng đã đăng ký trong một ứng dụng
+           - Hoạt động đăng nhập trong một ứng dụng trong một phần năm
+              - Số lượng người dùng mới đã đăng ký trong ngày hiện tại và tuần trước
+                 - Nhà cung cấp danh tính được sử dụng để đăng nhập vào bất kỳ ứng dụng nào.
+   Auth0 hiển thị dữ liệu dưới dạng biểu đồ và đồ thị. Dữ liệu này cũng có thể được lọc theo yêu cầu. Do đó, dữ liệu chính xác về các hoạt động có thể được theo dõi dễ dàng. Cuối cùng, dữ liệu này có thể được sử dụng trong các quy trình ra quyết định.
+   d) Những lợi ích khác
+   Chúng tôi đã liệt kê một số lợi ích của Auth0, nhưng vẫn còn một số lợi ích khác như;
+       - Nhiều mạng xã hội được hỗ trợ bởi Auth0
+       - Các ví dụ được ghi chép và mã hóa trong ngôn ngữ lập trình
+       - Thư viện công nghệ lớn
+       - API chất lượng
+       - Số lượng cài đặt có sẵn
+
+## Đăng nhập/Đăng Ký

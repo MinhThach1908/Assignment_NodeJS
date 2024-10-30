@@ -1,0 +1,18 @@
+<script>
+    const currentHref = window.location.href;    
+    document.querySelectorAll("a.nav-link").forEach(function(elem){ 
+        if(elem.href === currentHref){
+            elem.classList.add("active");
+        }        
+    });
+    document.querySelectorAll(".nav-sidebar>li.nav-item>a").forEach(function(elem){ 
+        if(currentHref.includes(elem.href)){
+            elem.parentNode.classList.add("menu-open");
+            elem.classList.add("active");
+        }
+    });
+    $(function () {
+    // Summernote
+        $('#summernote').summernote();        
+    })
+</script>
